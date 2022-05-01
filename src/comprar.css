@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding-top: 200px;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+
+  text-transform: capitalize;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: aqua;
+  box-shadow: 0.5px 10px yellow;
+  padding: 0px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header.logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: blue;
+}
+
+header.navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: orange;
+  display: block;
+}
+header .navbar ul li a:hover {
+  background: palevioletred;
+  color: green;
+}
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: violet;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: ivory border-top, 1px solid black;
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: brown;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+  #menu-bar:checked .navbar {
+    display: initial;
+  }
+}
+:root {
+  --onyx: hsl(0, 0%, 25%);
+  --azucre: hsl(219, 77%, 70%);
+  --white: hsl(0, 0%, 100%);
+  --platinus: hsl(0, 0%, 91%);
+  --red-salsa: hsl(0, 77%, 60%);
+  --dim-gray: hsl(0, 0%, 39%);
+  --davys-gray: hsl(0, 0%, 30%);
+  --spanish-gray: hsl(0, 0, 62%);
+  --quick-silver: hsl(0, 0%, 64%);
+
+  --fs-28: 24px;
+  --fs-24: 24px;
+  --fs-18: 18px;
+  --fs-15: 15px;
+  --fs-14: 14px;
+
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+
+  --px: 60px;
+  --radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "source sans 3", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+ion-icon,
+span {
+  display: inline-block;
+}
+
+label,
+img {
+  display: block;
+}
+input {
+  font: inherit;
+  width: 100%;
+  border: none;
+}
+input:focus {
+  outline: 2px solid var(--azure);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 80%);
+}

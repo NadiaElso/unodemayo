@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/comprar.css" />
+    <title>Document</title>
+  </head>
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <input type="checkbox" id="menu-bar" />
+    <label for="menu-bar">Menu</label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Lista de Productos +</a>
+          <ul>
+            <li><a href="#">Lista de precios</a></li>
+            <li><a href="#">Comprar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contacto +</a>
+          <ul>
+            <li><a href="formulario.html">Formulario de contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenier">
+    <h1 class="heading">
+      <ion-icon name="cart-outline"></ion-icon>
+      Shoping cart
+    </h1>
+    <div class="item-flex">
+      <section class="checkout">
+        <h2 class="section-heading">Payment Details</h2>
+      </section>
+    </div>
+  </main>
+
+  <body>
+    <script src="src/comprar.ts"></script>
+    <script src="comprar.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicon@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicon@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
